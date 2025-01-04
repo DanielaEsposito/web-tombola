@@ -9,7 +9,12 @@ export default function GamePage() {
   const closeOverlay = () => {
     setOverlayClass("d-none");
   };
+  const [randomNumber, steRundomNumber] = useState("");
   //console.log(numbers);
+  function generateRandomNumbers() {
+    let randomNumbers = Math.floor(Math.random() * (90 - 1 + 1)) + 1;
+    return steRundomNumber(randomNumbers);
+  }
   return (
     <main className="main-content">
       <div className={`overlay ${overlayClass} `}>
@@ -35,8 +40,14 @@ export default function GamePage() {
         <div className="col-3">
           <div className="container d-flex flex-column  align-items-center">
             <p>Ultimo numero estratto</p>
-            <div className="num-drawn"></div>
-            <button className="btn btn-secondary"> estrai numero </button>
+            <div className="num-drawn">{randomNumber}</div>
+            <button
+              onClick={generateRandomNumbers}
+              className="btn btn-secondary"
+            >
+              {" "}
+              estrai numero{" "}
+            </button>
             <hr />
             <button className="btn btn-secondary"> termina il gioco </button>
           </div>

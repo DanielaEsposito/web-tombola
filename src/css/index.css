@@ -98,13 +98,21 @@ header {
   width: 70px;
   height: 70px;
   text-align: center;
-  padding: 11px;
+  padding: 12px;
   border: 1px solid white;
   border-radius: 100%;
   margin: 10px;
 }
 .num {
   font-size: 2rem;
+}
+.num-drawn {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(139, 24, 24);
+  color: white;
+  font-size: 2rem;
+  padding: 17px;
 }
 /*FOOTER*/
 .footer {
