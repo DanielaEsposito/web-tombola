@@ -1,11 +1,25 @@
+import { useState } from "react";
 export default function GamePage() {
   let numbers = [];
   for (let i = 1; i <= 90; i++) {
     numbers.push(i);
   }
+
+  const [overlayClass, setOverlayClass] = useState("");
+  const closeOverlay = () => {
+    setOverlayClass("d-none");
+  };
   //console.log(numbers);
   return (
     <main className="main-content">
+      <div className={`overlay ${overlayClass} `}>
+        <div className="message d-flex flex-column  align-items-center ">
+          <p className="message-text">Ricordati che Gesù ti vede</p>
+          <button onClick={closeOverlay} className="btn btn-secondary">
+            Go to Play
+          </button>
+        </div>
+      </div>
       <div className="container d-flex ">
         <div className="col-9">
           <div className="container d-flex flex-wrap">

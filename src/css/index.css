@@ -74,17 +74,37 @@ header {
 .main-content {
   min-height: 100vh;
 }
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.message {
+  border: 1px solid white;
+  padding: 140px;
+  width: 600px;
+  height: 400px;
+  margin: 200px auto;
+  border-radius: 20px;
+}
+.message-text {
+  font-size: 2rem;
+  text-align: center;
+}
 .singleNum {
   width: 70px;
   height: 70px;
   text-align: center;
-  padding: 17px;
+  padding: 11px;
   border: 1px solid white;
   border-radius: 100%;
   margin: 10px;
 }
 .num {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 /*FOOTER*/
 .footer {
