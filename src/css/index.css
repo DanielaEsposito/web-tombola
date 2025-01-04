@@ -74,6 +74,18 @@ header {
 .main-content {
   min-height: 100vh;
 }
+.singleNum {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 17px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 10px;
+}
+.num {
+  font-size: 1.5rem;
+}
 /*FOOTER*/
 .footer {
   color: white;
