@@ -113,6 +113,16 @@ header {
   color: white;
   font-size: 2rem;
   padding: 17px;
+  margin: 20px 0px;
+}
+.drawn {
+  background-color: red;
+}
+.hr {
+  min-width: 100px;
+  background-color: white;
+  height: 1px;
+  margin: 20px 0px;
 }
 /*FOOTER*/
 .footer {

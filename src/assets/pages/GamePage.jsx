@@ -10,10 +10,18 @@ export default function GamePage() {
     setOverlayClass("d-none");
   };
   const [randomNumber, steRundomNumber] = useState("");
+  const [drawnNumber, setDrawnNumbers] = useState([]);
+
   //console.log(numbers);
+
   function generateRandomNumbers() {
-    let randomNumbers = Math.floor(Math.random() * (90 - 1 + 1)) + 1;
-    return steRundomNumber(randomNumbers);
+    let randomNumbers = Math.floor(Math.random() * 90) + 1;
+    if (!drawnNumber.includes(randomNumbers)) {
+      setDrawnNumbers(() => [...drawnNumber, randomNumbers]);
+      return steRundomNumber(randomNumbers);
+    } else {
+      return generateRandomNumbers();
+    }
   }
   return (
     <main className="main-content">
@@ -30,8 +38,14 @@ export default function GamePage() {
           <div className="container d-flex flex-wrap">
             {numbers.map((num) => {
               return (
-                <div key={num} className="singleNum">
-                  <span className="num">{num}</span>
+                <div
+                  key={num}
+                  id={num}
+                  className={`singleNum ${
+                    drawnNumber.includes(num) ? "drawn" : ""
+                  }`}
+                >
+                  <span className={`num ${drawnNumber}`}>{num}</span>
                 </div>
               );
             })}
@@ -39,7 +53,7 @@ export default function GamePage() {
         </div>
         <div className="col-3">
           <div className="container d-flex flex-column  align-items-center">
-            <p>Ultimo numero estratto</p>
+            <p>ULTIMO NUMERO ESTRATTO</p>
             <div className="num-drawn">{randomNumber}</div>
             <button
               onClick={generateRandomNumbers}
@@ -48,7 +62,7 @@ export default function GamePage() {
               {" "}
               estrai numero{" "}
             </button>
-            <hr />
+            <div className="hr"></div>
             <button className="btn btn-secondary"> termina il gioco </button>
           </div>
         </div>
