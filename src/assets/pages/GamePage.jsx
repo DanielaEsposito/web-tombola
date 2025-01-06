@@ -131,6 +131,7 @@ export default function GamePage() {
   function gameOver() {
     steRundomNumber("");
     setDrawnNumbers([]);
+    setMessage("");
   }
   return (
     <main className="main-content">
