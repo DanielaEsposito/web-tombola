@@ -118,9 +118,10 @@ header {
   height: 70px;
   text-align: center;
   padding: 12px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 100%;
   margin: 10px;
+  background-color: rgb(22, 22, 22);
 }
 .num {
   font-size: 2rem;
