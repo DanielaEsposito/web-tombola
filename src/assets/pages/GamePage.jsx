@@ -87,8 +87,8 @@ export default function GamePage() {
     "Sono Lillo",
     "Mi sento come Mr.Peanutbutter...e questo la dice lunga",
     "Ci son due coccodrilli",
-    "Non ho mai visto una patata cos' elegante",
-    "Il mio gatto di chiama 104",
+    "Non ho mai visto una patata così elegante",
+    "Il mio gatto si chiama 104",
     "Fra poco mi arrendo parte seconda",
     "La triste e deprimente storia della mia vita",
     "Il cimiche elicottero che mi sveglia di notte",
@@ -142,6 +142,16 @@ export default function GamePage() {
           </button>
         </div>
       </div>
+      <img
+        src="decorazionenatale.png"
+        alt="decorazione"
+        className="decoration img-fluid"
+      />
+      <img
+        src="decorazionenatale.png"
+        alt="decorazione"
+        className="decoration-2 img-fluid"
+      />
       <div className="container d-flex ">
         <div className="col-9">
           <div className="container d-flex flex-wrap">

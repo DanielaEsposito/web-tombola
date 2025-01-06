@@ -74,9 +74,22 @@ header {
 .main-content {
   min-height: 100vh;
 }
+.decoration {
+  width: 250px;
+  position: absolute;
+  top: 10px;
+}
+.decoration-2 {
+  width: 250px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: scaleX(-1);
+}
 
 .overlay {
   position: absolute;
+  z-index: 1;
   top: 0px;
   left: 0px;
   right: 0px;
