@@ -153,7 +153,7 @@ export default function GamePage() {
         alt="decorazione"
         className="decoration-2 img-fluid"
       />
-      <div className="container d-flex ">
+      <div className="container d-flex position-sticky ">
         <div className="col-9">
           <div className="container d-flex flex-wrap">
             {numbers.map((num) => {
