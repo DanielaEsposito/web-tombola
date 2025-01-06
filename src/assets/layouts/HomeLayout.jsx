@@ -8,7 +8,7 @@ export default function HomeLayout() {
             <h1 className="home-title">
               Tombola <br /> Ignorante
             </h1>
-            <div className="btn-link">
+            <div className="buttonGame">
               <Link to="/game" className="link-gamePage">
                 Start to Play
               </Link>
