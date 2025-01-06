@@ -121,6 +121,7 @@ export default function GamePage() {
       return steRundomNumber(randomNumbers);
     } else {
       if (drawnNumber.length == 90) {
+        gameOver();
         return alert("hai estratto tutti i numeri ");
       }
       return generateRandomNumbers();
@@ -223,7 +224,11 @@ export default function GamePage() {
               >
                 GAME OVER
               </button>
-              <button type="button" className="btn btn-secondary">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                className="btn btn-secondary"
+              >
                 BACK TO PLAY
               </button>
             </div>
