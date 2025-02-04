@@ -137,7 +137,7 @@ export default function GamePage() {
     <main className="main-content">
       <div className={`overlay ${overlayClass} `}>
         <div className="message d-flex flex-column  align-items-center ">
-          <p className="message-text">Ricorda che io ti vedo</p>
+          <p className="message-text">Ricorda che Gesù ti vede</p>
           <button onClick={closeOverlay} className="btn btn-secondary">
             Go to Play
           </button>
